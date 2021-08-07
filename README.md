@@ -1,9 +1,8 @@
 
-<p align="center">
-# Instafact: World of Information at Your Fingertips
-![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fcarnales.github.io/Instafact/)
-</p>
+# <p align="center">Instafact: World of Information at Your Fingertips</p>
+<p align="center">![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fcarnales.github.io/Instafact/)</p>
 
+============= 
 
 ## Instructions for hosting locally
 
