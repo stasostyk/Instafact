@@ -1,8 +1,7 @@
 
 # <p align="center">Instafact: World of Information at Your Fingertips</p>
-<p align="center">![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fcarnales.github.io/Instafact/)</p>
+![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fcarnales.github.io/Instafact/)
 
-============= 
 
 ## Instructions for hosting locally
 
@@ -18,4 +17,4 @@
 ~/instafact $ bundle exec jekyll serve
 ```
 
-4. In your browser, open 'localhost:4000' or '127.0.0.1:4000'
+4. In your browser, open `localhost:4000` or `127.0.0.1:4000`
