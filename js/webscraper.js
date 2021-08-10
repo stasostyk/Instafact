@@ -17,11 +17,13 @@ getSearchResults(query_term).then(function(results) {
     console.log ((i+1) + ". '" + titles[i] + "'");
     console.log ("    link -> " + links[i]);
   }
-
   // boom, now we have two arrays of search results
 
+  // attempting to webscrape first link...
+  fetchText(links[0]);
 
 });
+
 
 // requesting data from Google Search API, returning list of GoogleSearch objects
 function getSearchResults(query) {
@@ -30,3 +32,17 @@ function getSearchResults(query) {
       return data.items;
     });
   }
+
+function fetchText(link) {
+  console.log("[+] Fetching HTML data...");
+  // The following line is the bane of my existence. Please help!!
+  // the problem is with CORS (cross-origin-resource-sharing)
+  // no matter the cross origin service I use, I still get:
+  // "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at..."
+  var url = "http://anyorigin.com/go?url=" + encodeURIComponent(link) + name + "&callback=?";
+
+  // Now its requesting the website (for future web scraping) and just printing the data
+  $.get(url, function(data) {
+    console.log(data);
+  });
+}
